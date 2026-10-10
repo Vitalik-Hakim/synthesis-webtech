@@ -1,6 +1,6 @@
-# Vitalik OS portfolio
+# Abdul Hakim Aremeyaw portfolio
 
-A one-page portfolio for Abdul Hakim Aremeyaw (Vitalik) that looks like a small desktop operating system. Click an icon and a window opens with content from my CV: About, Projects, Experience or Contact. Built for the Web Technologies synthesis using only Lessons 1-9.
+A one-page portfolio for Abdul Hakim Aremeyaw (Vitalik) that is laid out like a macOS desktop. Click an icon and a window opens with content from my CV: About, Projects, Experience or Contact. Built for the Web Technologies synthesis using only Lessons 1-9.
 
 ## How to open it
 

@@ -4,133 +4,188 @@
   <!-- L2: document metadata -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <meta name="description" content="Portfolio of Abdul Hakim Aremeyaw (Vitalik), software engineer, laid out like a small desktop operating system.">
-  <title>Vitalik OS | Abdul Hakim Aremeyaw</title>
+  <meta name="description" content="Portfolio of Abdul Hakim Aremeyaw (Vitalik), software engineer, laid out like a macOS desktop.">
+  <title>Abdul Hakim Aremeyaw</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 <body>
   <!-- L3: semantic structure -->
-  <header class="topbar">
-    <h1>Vitalik OS</h1>
-    <p>Abdul Hakim Aremeyaw, Software Engineer and Computer Science student at Ashesi University.</p>
+  <header class="menubar">
+    <img src="avatar.svg" alt="" width="20" height="20">
+    <h1>Abdul Hakim Aremeyaw</h1>
+    <p class="status" id="status">Desktop</p>
   </header>
 
   <main class="desktop">
-    <nav class="icons">
-      <button type="button" id="icon-about"><span class="emoji">👤</span>About</button>
-      <button type="button" id="icon-projects"><span class="emoji">📁</span>Projects</button>
-      <button type="button" id="icon-experience"><span class="emoji">💼</span>Experience</button>
-      <button type="button" id="icon-contact"><span class="emoji">✉️</span>Contact</button>
-    </nav>
-
-    <section class="window" id="win-about">
-      <div class="title-bar">
-        <h2>About</h2>
-        <button type="button" id="close-about">Close</button>
-      </div>
-      <div class="window-body">
-        <!-- L4: image with alt, width and height -->
-        <img src="avatar.svg" alt="Avatar with the initials AH" width="96" height="96">
-        <p>I am <strong>Abdul Hakim Aremeyaw</strong>, known as Vitalik, a software engineer who builds web and mobile products, internal tools and <em>open-source Web3 SDKs</em>. I have founded several products, including AntiGPT.app, Superate and ChoQR. I am a Computer Science major at Ashesi University, class of 2028, and the Google Developer Student Club (GDSC) Lead for Projects for Fun.</p>
-        <h3>Skills</h3>
-        <ul>
-          <li>Languages: C++, Python, PHP, Lua, JavaScript</li>
-          <li>Mobile: React Native, Expo, PWA</li>
-          <li>Databases: Supabase, Firebase, Postgres, MySQL, SQLite</li>
-          <li>DevOps: Docker, GitHub Actions, AWS, Azure, Google Cloud, Digital Ocean</li>
-          <li>Blockchain: Web3, Solidity</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="window" id="win-projects">
-      <div class="title-bar">
-        <h2>Projects</h2>
-        <button type="button" id="close-projects">Close</button>
-      </div>
-      <div class="window-body">
-        <!-- L4: table with caption and column headers -->
-        <table>
-          <caption>Selected projects from my CV</caption>
+    <!-- L4: calendar is a plain table; the strong tag marks the build date -->
+    <section class="widgets">
+      <section class="widget">
+        <table class="calendar">
+          <caption>October 2026</caption>
           <thead>
-            <tr>
-              <th scope="col">Project</th>
-              <th scope="col">Platform</th>
-              <th scope="col">What it does</th>
-            </tr>
+            <tr><th scope="col">M</th><th scope="col">T</th><th scope="col">W</th><th scope="col">T</th><th scope="col">F</th><th scope="col">S</th><th scope="col">S</th></tr>
           </thead>
-          <tbody id="project-rows"></tbody>
+          <tbody>
+            <tr><td></td><td></td><td></td><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+            <tr><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td><strong>10</strong></td><td>11</td></tr>
+            <tr><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td></tr>
+            <tr><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td></tr>
+            <tr><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td><td></td></tr>
+          </tbody>
         </table>
-      </div>
-    </section>
-
-    <section class="window" id="win-experience">
-      <div class="title-bar">
-        <h2>Experience</h2>
-        <button type="button" id="close-experience">Close</button>
-      </div>
-      <div class="window-body">
-        <!-- L3: description list of roles -->
-        <dl>
-          <dt>Founder and Tech Lead, AntiGPT.app</dt>
-          <dd>Jan 2023 to present. Refines AI-written content to improve readability and accuracy.</dd>
-          <dt>Founder and CEO, Superate</dt>
-          <dd>Jul 2024 to present. A service that helps influencers turn their following into earnings.</dd>
-          <dt>Founder and Tech Lead, ChoQR</dt>
-          <dd>Nov 2024 to present. B2B SaaS for restaurants to show QR menus in-house and online.</dd>
-          <dt>CEO and Software Engineer, Tonfast.com</dt>
-          <dd>May 2023 to 2025. Ghana e-commerce marketplace with a mobile app on both app stores; 300+ businesses registered.</dd>
-          <dt>Geographical Systems Analyst, Yandex (Yango)</dt>
-          <dd>Dec 2022 to Mar 2023, part-time and remote. Recorded and analysed key traffic locations in Accra.</dd>
-          <dt>Digital Developer Intern, Heritors Labs</dt>
-          <dd>Jul to Aug 2022. Built internal feedback software.</dd>
-          <dt>Software Developer Intern, Built Africa</dt>
-          <dd>Jun to Jul 2022. Learned Laravel API development; wrote scripts that cut data processing time by 30%.</dd>
-        </dl>
-        <h3>Awards</h3>
+      </section>
+      <section class="widget">
+        <h2>Ashesi University</h2>
+        <p class="big">2028</p>
+        <p>Computer Science major, class of 2028, since Jan 2025.</p>
+        <p>GDSC Lead for Projects for Fun.</p>
+      </section>
+      <section class="widget">
+        <h2>Awards</h2>
         <ul>
           <li>1st place, First Blockchain Teen Boot Camp Hackathon (Ghana, national)</li>
           <li>1st place, Moonshot Pirates Ghanaian Hackathon (national)</li>
           <li>Innovation and Creativity Award 2023</li>
         </ul>
-      </div>
+      </section>
     </section>
 
-    <section class="window" id="win-contact">
-      <div class="title-bar">
-        <h2>Contact</h2>
-        <button type="button" id="close-contact">Close</button>
-      </div>
-      <div class="window-body">
-        <!-- L5: labelled form fields with built-in validation -->
-        <form id="contact-form">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" required>
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="4" maxlength="150" required></textarea>
-          <output id="counter">0 / 150</output>
-          <button type="submit">Send</button>
-          <p id="form-status" role="status"></p>
-        </form>
-        <h3>Find me</h3>
-        <!-- L4: mailto and external links -->
-        <ul>
-          <li><a href="mailto:vitalikhakim@gmail.com">vitalikhakim@gmail.com</a></li>
-          <li><a href="https://github.com/Vitalik-Hakim" target="_blank" rel="noopener">GitHub</a></li>
-          <li><a href="https://www.linkedin.com/in/abdul-hakim-vitalik-7b69a7223/" target="_blank" rel="noopener">LinkedIn</a></li>
-          <li><a href="https://vitalikhakim.netlify.app/" target="_blank" rel="noopener">Personal site</a></li>
-          <li><a href="https://vitalik.digital" target="_blank" rel="noopener">Agency site</a></li>
-        </ul>
-      </div>
-    </section>
+    <div class="stage">
+      <section class="welcome" id="welcome">
+        <img src="avatar.svg" alt="Avatar with the initials AH" width="96" height="96">
+        <p>Hi, I am <strong>Vitalik</strong>, a software engineer. Open an app from the Dock to look around.</p>
+      </section>
+
+      <section class="window" id="win-about">
+        <div class="title-bar">
+          <button type="button" id="close-about" title="Close">×</button>
+          <span class="dot dot-yellow"></span>
+          <span class="dot dot-green"></span>
+          <h2>About</h2>
+        </div>
+        <div class="window-body">
+          <!-- L4: image with alt, width and height -->
+          <img src="avatar.svg" alt="Avatar with the initials AH" width="96" height="96">
+          <p>I am <strong>Abdul Hakim Aremeyaw</strong>, known as Vitalik, a software engineer who builds web and mobile products, internal tools and <em>open-source Web3 SDKs</em>. I have founded several products, including AntiGPT.app, Superate and ChoQR. I am a Computer Science major at Ashesi University, class of 2028, and the Google Developer Student Club (GDSC) Lead for Projects for Fun.</p>
+          <h3>Skills</h3>
+          <ul>
+            <li>Languages: C++, Python, PHP, Lua, JavaScript</li>
+            <li>Mobile: React Native, Expo, PWA</li>
+            <li>Databases: Supabase, Firebase, Postgres, MySQL, SQLite</li>
+            <li>DevOps: Docker, GitHub Actions, AWS, Azure, Google Cloud, Digital Ocean</li>
+            <li>Blockchain: Web3, Solidity</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="window" id="win-projects">
+        <div class="title-bar">
+          <button type="button" id="close-projects" title="Close">×</button>
+          <span class="dot dot-yellow"></span>
+          <span class="dot dot-green"></span>
+          <h2>Projects</h2>
+        </div>
+        <div class="window-body">
+          <!-- L4: table with caption and column headers -->
+          <table>
+            <caption>Selected projects from my CV</caption>
+            <thead>
+              <tr>
+                <th scope="col">Project</th>
+                <th scope="col">Platform</th>
+                <th scope="col">What it does</th>
+              </tr>
+            </thead>
+            <tbody id="project-rows"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="window" id="win-experience">
+        <div class="title-bar">
+          <button type="button" id="close-experience" title="Close">×</button>
+          <span class="dot dot-yellow"></span>
+          <span class="dot dot-green"></span>
+          <h2>Experience</h2>
+        </div>
+        <div class="window-body">
+          <!-- L3: description list of roles -->
+          <dl>
+            <dt>Founder and Tech Lead, AntiGPT.app</dt>
+            <dd>Jan 2023 to present. Refines AI-written content to improve readability and accuracy.</dd>
+            <dt>Founder and CEO, Superate</dt>
+            <dd>Jul 2024 to present. A service that helps influencers turn their following into earnings.</dd>
+            <dt>Founder and Tech Lead, ChoQR</dt>
+            <dd>Nov 2024 to present. B2B SaaS for restaurants to show QR menus in-house and online.</dd>
+            <dt>CEO and Software Engineer, Tonfast.com</dt>
+            <dd>May 2023 to 2025. Ghana e-commerce marketplace with a mobile app on both app stores; 300+ businesses registered.</dd>
+            <dt>Geographical Systems Analyst, Yandex (Yango)</dt>
+            <dd>Dec 2022 to Mar 2023, part-time and remote. Recorded and analysed key traffic locations in Accra.</dd>
+            <dt>Digital Developer Intern, Heritors Labs</dt>
+            <dd>Jul to Aug 2022. Built internal feedback software.</dd>
+            <dt>Software Developer Intern, Built Africa</dt>
+            <dd>Jun to Jul 2022. Learned Laravel API development; wrote scripts that cut data processing time by 30%.</dd>
+          </dl>
+          <h3>Awards</h3>
+          <ul>
+            <li>1st place, First Blockchain Teen Boot Camp Hackathon (Ghana, national)</li>
+            <li>1st place, Moonshot Pirates Ghanaian Hackathon (national)</li>
+            <li>Innovation and Creativity Award 2023</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="window" id="win-contact">
+        <div class="title-bar">
+          <button type="button" id="close-contact" title="Close">×</button>
+          <span class="dot dot-yellow"></span>
+          <span class="dot dot-green"></span>
+          <h2>Contact</h2>
+        </div>
+        <div class="window-body">
+          <!-- L5: labelled form fields with built-in validation -->
+          <form id="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" maxlength="150" required></textarea>
+            <output id="counter">0 / 150</output>
+            <button type="submit">Send</button>
+            <p id="form-status" role="status"></p>
+          </form>
+          <h3>Find me</h3>
+          <!-- L4: mailto and external links -->
+          <ul>
+            <li><a href="mailto:vitalikhakim@gmail.com">vitalikhakim@gmail.com</a></li>
+            <li><a href="https://github.com/Vitalik-Hakim" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/abdul-hakim-vitalik-7b69a7223/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://vitalikhakim.netlify.app/" target="_blank" rel="noopener">Personal site</a></li>
+            <li><a href="https://vitalik.digital" target="_blank" rel="noopener">Agency site</a></li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <!-- L4: desktop icons are real links that open in a new tab -->
+    <nav class="shortcuts">
+      <a href="https://github.com/Vitalik-Hakim" target="_blank" rel="noopener"><span class="emoji dark">🐙</span>GitHub</a>
+      <a href="https://www.linkedin.com/in/abdul-hakim-vitalik-7b69a7223/" target="_blank" rel="noopener"><span class="emoji linkedin">in</span>LinkedIn</a>
+      <a href="https://vitalikhakim.netlify.app/" target="_blank" rel="noopener"><span class="emoji teal">🌐</span>Personal site</a>
+      <a href="https://vitalik.digital" target="_blank" rel="noopener"><span class="emoji pink">🚀</span>vitalik.digital</a>
+      <a href="mailto:vitalikhakim@gmail.com"><span class="emoji green">@</span>Email</a>
+    </nav>
   </main>
 
-  <footer class="taskbar">
-    <p id="status">Desktop</p>
-    <a href="https://github.com/Vitalik-Hakim" target="_blank" rel="noopener">GitHub</a>
+  <footer class="dockbar">
+    <nav class="dock">
+      <button type="button" id="icon-about"><span class="emoji blue">👤</span>About</button>
+      <button type="button" id="icon-projects"><span class="emoji orange">📁</span>Projects</button>
+      <button type="button" id="icon-experience"><span class="emoji green">💼</span>Experience</button>
+      <button type="button" id="icon-contact"><span class="emoji purple">✉️</span>Contact</button>
+    </nav>
   </footer>
 
   <noscript><p>The desktop needs JavaScript to open and close windows; the content is still readable without it.</p></noscript>

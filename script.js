@@ -15,6 +15,7 @@ function showWindow(name) {
     const win = document.getElementById('win-' + names[i]);
     win.hidden = names[i] !== name;
   }
+  document.getElementById('welcome').hidden = name !== '';
   const status = document.getElementById('status');
   status.textContent = name === '' ? 'Desktop' : 'Open: ' + name;
 }
