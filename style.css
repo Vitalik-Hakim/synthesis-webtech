@@ -1,1 +1,59 @@
-/* L6: styles are added in part 5 */
+/* L7: box-sizing reset */
+html { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
+
+/* L7: flex column so the taskbar sits at the bottom */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #0f1c2b;
+}
+
+.topbar {
+  padding: 0.5rem 1rem;
+  color: #fff;
+  background: #0b1420;
+}
+.topbar h1 { margin: 0; font-size: 1.25rem; }
+.topbar p { margin: 0; }
+
+.desktop {
+  flex: 1;
+  padding: 1rem;
+  background: linear-gradient(160deg, #1f3550, #0f1c2b);
+}
+
+/* L7: grid with fr columns */
+.icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  max-width: 40rem;
+  margin: 0 auto 1rem;
+}
+.icons button {
+  padding: 1rem 0.5rem;
+  border: 1px solid #5f7a99;
+  border-radius: 12px;
+  color: #fff;
+  background: #2b4a6b;
+  font: inherit;
+}
+.icons button:hover { background: #3a6189; }
+.emoji { display: block; font-size: 2rem; }
+
+.taskbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  background: #f3f5f8;
+}
+.taskbar p { margin: 0; }
+
+/* L6: link states */
+a:link { color: #185a86; }
+a:visited { color: #5b3f8a; }
+a:hover { color: #0b2f4a; }
